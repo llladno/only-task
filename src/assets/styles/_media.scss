@@ -1,0 +1,85 @@
+@media (max-width: $screen_mobile) {
+
+  #root {
+    overflow: hidden;
+  }
+
+  .mainPlace {
+    width: 100% !important;
+    margin: 0 !important;
+    height: 100vh !important;
+    grid-template-rows: 55% 35% 10% !important;
+    overflow: hidden;
+    align-items: center;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+
+
+  .circle {
+    display: none;
+  }
+
+  .selector {
+    grid-row-start: 3;
+
+    .selectorBtns {
+      width: 70px;
+    }
+
+    button {
+      width: 25px !important;
+      height: 25px !important;
+    }
+  }
+
+  .time {
+    font-size: 56px !important;
+  }
+
+
+  .timeCircle {
+    position: relative;
+    top: 0 !important;
+  }
+
+  .historyCircle {
+    height: 52vh !important;
+    border-bottom: 1px solid #d0d5df;
+
+    .historyDate {
+      h1 {
+        margin-left: 20px;
+      }
+    }
+
+    .displayCircle {
+      display: grid;
+      align-items: center;
+      justify-items: center;
+      top: 0 !important;
+      max-height: 400px;
+      height: 50vh;
+    }
+
+    .title {
+      top: 50%;
+      left: 20.2%;
+    }
+
+    .line{
+      display: none;
+    }
+
+
+  }
+  h1 {
+    font-size: 20px !important;
+  }
+}

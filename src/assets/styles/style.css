@@ -1,0 +1,118 @@
+* {
+  font-family: "PT Sans", sans-serif;
+}
+
+body {
+  background: #F4F5F9;
+}
+
+.mainPlace {
+  display: grid;
+  grid-template-columns: 100%;
+  position: relative;
+  max-width: 1440px;
+  width: 76%;
+  height: 100%;
+  margin: 0 8% 0 16%;
+  border: #ebedf2 1px solid;
+}
+.mainPlace .eventbox h3 {
+  font-size: 25px;
+  font-weight: 700;
+  color: #3877EE;
+}
+.mainPlace .eventbox p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #42567A;
+}
+.mainPlace::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background-color: #ebedf2;
+}
+.mainPlace::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 45.5%;
+  height: 2px;
+  background-color: #ebedf2;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+
+.slider {
+  padding-left: 75px;
+}
+
+.selector h2 {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: #42567A;
+}
+.selector button {
+  font-family: swiper-icons;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: none;
+  border: 1px solid #9aa5b9;
+}
+
+.historyCircle {
+  max-width: 1440px;
+  height: 615px;
+}
+.historyCircle .timeCircle {
+  position: relative;
+  top: 75%;
+}
+.historyCircle .time {
+  display: flex;
+  font-size: 200px;
+  color: #5D5FEF;
+  font-weight: 700;
+}
+.historyCircle .time span {
+  margin-left: 70px;
+  color: #EF5DA8;
+}
+
+.selector {
+  margin: 0 0 56px 76px;
+}
+
+.selectorBtns {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.line {
+  position: relative;
+  top: 11px;
+  height: 120px;
+  width: 5px;
+  background: linear-gradient(#5D5FEF, #EF5DA8);
+}
+
+.historyDate {
+  width: 100%;
+  display: flex;
+  position: relative;
+  top: 12%;
+}
+.historyDate h1 {
+  color: #42567A;
+  margin-left: 78px;
+  font-size: 56px;
+}
+
+/*# sourceMappingURL=style.css.map */
